@@ -188,7 +188,7 @@ Licensed under [GNU General Public License v2.0](https://www.gnu.org/licenses/ol
 ## 🙏 Credits
 
 - **Original Project**: RapidLeech Team
-- **Bootstrap Template**: NLMG.inc
+- **Bootstrap Template**: NOXHOSTING
 - **PHP 8 Migration**: Community Contributors
 - **UI/UX Enhancements**: Open-source devs
 
