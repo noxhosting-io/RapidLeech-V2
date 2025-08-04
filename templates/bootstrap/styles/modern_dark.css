@@ -1,0 +1,203 @@
+/* ==================
+   Global Layout Fix
+   ================== */
+body {
+    /* Pushes the content down to account for the fixed navbar */
+    padding-top: 70px; 
+}
+
+/* ==================
+   General Fixes (Both Themes)
+   ================== */
+
+/* Plugin list scrollbar & item styling */
+.pre-scrollable-plugin-list {
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 0 15px 10px 15px;
+}
+
+.plugin-item {
+    display: block;
+    padding: 3px 0;
+    text-decoration: none;
+}
+
+.plugin-item:hover {
+    text-decoration: underline;
+}
+
+/* Automation Tools & Premium Host list gap fix */
+.panel .list-group {
+    margin-bottom: 0;
+}
+.panel .list-group .list-group-item {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+}
+.panel .list-group .list-group-item:first-child {
+    border-top: none;
+}
+.panel .list-group .list-group-item:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* Navbar Link Hover */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: #e7e7e7;
+}
+
+/* ==================
+   Dark Mode Theme
+   ================== */
+
+body.dark-mode {
+    background-color: #1a1d21;
+    color: #e0e0e0;
+}
+
+body.dark-mode a {
+    color: #00aeff;
+}
+
+body.dark-mode a:hover {
+    color: #4ddbff;
+}
+
+/* Dark Navbar */
+body.dark-mode .navbar-default {
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+    background-image: none;
+    box-shadow: none;
+}
+body.dark-mode .navbar-default .navbar-brand,
+body.dark-mode .navbar-default .navbar-nav > li > a {
+    color: #ecf0f1;
+}
+body.dark-mode .navbar-default .navbar-brand:hover,
+body.dark-mode .navbar-default .navbar-brand:focus,
+body.dark-mode .navbar-default .navbar-nav > li > a:hover,
+body.dark-mode .navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+    background-color: #34495e;
+}
+body.dark-mode .navbar-default .navbar-nav > .active > a,
+body.dark-mode .navbar-default .navbar-nav > .active > a:hover,
+body.dark-mode .navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #1abc9c;
+}
+
+/* Dark Main Content Area */
+body.dark-mode .jumbotron {
+    background-color: #282c34;
+    border: 1px solid #3a414b;
+    color: #e0e0e0;
+}
+
+body.dark-mode legend {
+    color: #e0e0e0;
+    border-bottom: 1px solid #3a414b;
+}
+
+/* Dark Panels (Sidebars) */
+body.dark-mode .panel-primary {
+    border-color: #3a414b;
+    background-color: #282c34;
+}
+
+body.dark-mode .panel-primary > .panel-heading {
+    color: #ffffff;
+    background-color: #00aeff;
+    border-color: #00aeff;
+    background-image: none;
+}
+
+body.dark-mode .list-group-item {
+    background-color: #282c34;
+    border-color: #3a414b;
+    color: #e0e0e0;
+}
+
+body.dark-mode a.list-group-item {
+    color: #e0e0e0;
+}
+
+body.dark-mode a.list-group-item:hover,
+body.dark-mode a.list-group-item:focus {
+    color: #ffffff;
+    background-color: #3a414b;
+}
+
+body.dark-mode .plugin-item {
+    color: #e0e0e0;
+}
+
+/* Dark Forms and Inputs */
+body.dark-mode .form-control {
+    background-color: #21252b;
+    border: 1px solid #3a414b;
+    color: #e0e0e0;
+}
+body.dark-mode .form-control:focus {
+    border-color: #00aeff;
+    box-shadow: 0 0 8px rgba(0, 174, 255, 0.6);
+}
+
+/* Dark Buttons */
+body.dark-mode .btn-primary {
+    color: #ffffff;
+    background-color: #00aeff;
+    border-color: #00aeff;
+    background-image: none;
+}
+body.dark-mode .btn-primary:hover {
+    background-color: #33bbff;
+    border-color: #33bbff;
+}
+
+/* Dark Tables */
+body.dark-mode .table-bordered > thead > tr > th,
+body.dark-mode .table-bordered > tbody > tr > th,
+body.dark-mode .table-bordered > tfoot > tr > th,
+body.dark-mode .table-bordered > thead > tr > td,
+body.dark-mode .table-bordered > tbody > tr > td,
+body.dark-mode .table-bordered > tfoot > tr > td {
+    border: 1px solid #3a414b;
+}
+
+body.dark-mode .flisttblhdr {
+    background-color: #2c3e50;
+    color: white;
+}
+body.dark-mode .flistmouseoff {
+    background-color: #282c34;
+    color: #e0e0e0;
+}
+body.dark-mode .flistmouseon {
+    background-color: #3a414b;
+    color: #ffffff;
+}
+body.dark-mode .filelist a, body.dark-mode a.flist-file-name {
+    color: #00aeff !important;
+}
+
+/* Dark Footer */
+body.dark-mode footer p legend {
+    color: #777;
+    border: none;
+}
+
+body.dark-mode footer a {
+    color: #00aeff;
+}
+
+/* Light Theme Specifics (Overrides) */
+body:not(.dark-mode) .plugin-item {
+     color: #333;
+}
