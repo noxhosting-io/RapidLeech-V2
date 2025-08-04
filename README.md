@@ -1,6 +1,6 @@
 # 🚀 RapidLeech BootStrap Edition — PHP 8 Compatible
 
-![RapidLeech Logo](http://www.rapidleech.com/public/style_images/1_121.png)
+
 
 ## Overview
 
